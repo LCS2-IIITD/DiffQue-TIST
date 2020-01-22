@@ -1,0 +1,100 @@
+<style type="text/css">
+	
+	.personal-content {
+		margin: 0px auto;
+		/*padding-left: 50px ;*/
+		padding-top: 50px ;
+		padding-bottom: 50px ;
+		width: 600px;
+		color: #314a7a;
+		background-color: rgba(240,240,240,0.8)!important;
+		z-index:2;
+		min-height: 400px;
+	}
+
+	.t{
+
+		font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 16px;
+		font-weight: 40;
+		line-height: 1.05em;
+	}
+	.dateCSS{
+		
+		font-size:18px ;
+		/*color: #fff; */
+		font-weight:20px ; 
+		padding-top:-30px; 
+		margin-top: -20px
+		padding-bottom:10px;
+		margin-bottom: 10px ;
+		/*color: #d9d9d9;*/
+		color: rgb(150,150,150);
+		/*background-color: #e8e8e8;*/ text-shadow: rgba(255,255,255,.1) -1px -1px 1px,rgba(0,0,0,.5) 1px 1px 1px;
+
+	}
+	.row1:nth-of-type(odd) {
+		background-color: rgb(238,238,238);
+	}
+
+</style>
+
+<div class="container" style="width:100% margin: auto; background-color: #ffffff;">
+    <div class="row row-content">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8" style="padding-left: 20px; padding-right: 20px; padding-top: 50px; padding-bottom: 65px;">
+			<H1><center>DiffQue: A Relative Question Difficulty Estimation System</center></H1>
+                        <hr style="height:5px;border:none;background-color: black">
+		</div>
+	</div>
+	<div class="row row-content">
+		<div class="col-sm-1"></div>
+
+		<div class="col-sm-5" style="border-style: solid;border-width:small; padding-left: 20px; padding-right: 20px; padding-top: 30px; padding-bottom: 20px;">
+			<div class="row row-content">
+				<div class="col-sm-3" >
+				<h3>Q1</h3>
+				</div>
+				<div class="col-sm-6">
+					<span><input style="width:130%;margin-left:-60px;height:95%;" textarea="Enter URL-1/ID-1" type="text" name="url1" id="url1" size="25" ng-model = "url1"></span>
+				</div>
+				<div class="col-sm-3">
+					<a class="btn btn-info" ng-click="browseurl1()">Browse</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-1"></div>
+
+		<div class="col-sm-5" style="border-style: solid;border-width: medium; padding-left: 20px; padding-right: 20px; padding-top: 30px; padding-bottom: 20px;margin-left:-30px">
+			<div class="row row-content">
+				<div class="col-sm-3" >
+			        <h3>Q2</h3>
+				</div>
+				<div class="col-sm-6" >
+					<span><input style="width:130%;margin-left:-60px;height:95%;"  textarea="Enter URL-2/ID-2" type="text" name="url2" id="url2" size="25" ng-model = "url2"></span>
+				</div>
+				<div class="col-sm-3">
+					<a class="btn btn-info" ng-click="browseurl2()">Browse</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row row-content"></div>
+	<div class="row row-content" style="padding-top: 40px; padding-bottom: 20px;">
+		<div class="col-sm-5"></div>
+		<!-- <div class="col-sm-4"> -->
+		<a class="btn btn-success" ng-click="process()">Submit </a>
+		<!-- </div> -->
+		<div class="col-sm-1"></div>
+		<a class="btn btn-info" ng-click="clear()">Clear </a>
+	</div>
+	<div class="row row-content" style="padding-top: 30px; padding-bottom: 20px;">
+		<!-- <div class="col-sm-5"></div> -->
+		<div class="col-sm-12">
+			<center><label><H2><b>{{resulttext}}</b></H2></label></center>
+		</div>
+	</div>
+
+		<!-- </div> -->
+</div>

@@ -1,0 +1,56 @@
+{
+  "name": "DiffQue",
+  "version": "0.0.0",
+  "description": "Portal for estimation of relative difficulty of questions in CQA services",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "patient",
+    "sql",
+    "express",
+    "nodejs",
+    "angular"
+  ],
+  "authors": "FCS Team",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": null,
+    "angular-ui-router": null,
+    "angular-mocks": null,
+    "angular-resource": null,
+    "angular-route": null,
+    "bootstrap": null,
+    "font-awesome": null,
+    "ng-dialog": null,
+    "angular-bootstrap": null,
+    "validator-js": null,
+    "angular-material": null,
+    "angular-messages": null,
+    "angular-cookies": null,
+    "jquery": null
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.css"
+      ]
+    }
+  },
+  "resolutions": {
+    "angular": "~1.5.5"
+  }
+}
